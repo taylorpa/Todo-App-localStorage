@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>To Do List 2022 w/ Local Storage</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="stylesheet" type= "text/css" href="/static/styletodo.css" />
+    </head>
+    <body>
+        <main class="app">
+        <!--- top greeting -->
+            <section class="greeting">
+                <h2 class="title">
+                    What's up, <input type="text" id="name" placeholder="Name here">
+                </h2>
+            </section>
+        
+            <!--Create To Do-->
+            <section class="create-todo">
+                <h3>CREATE A TODO</h3>
+                <form id="new-todo-form">
+                    <h4>What's on your todo list?</h4>
+                        <input 
+                            type="text" 
+                            name="content" 
+                            id="content" 
+                            placeholder="e.g make a video">
+                        <h4>Pick a category</h4>
+                        <div class="options">
+                            <label>
+                                <input
+                                    type="radio"
+                                    name = "category"
+                                    id="category"
+                                    value="business" />
+                                <span class="bubble business"></span>
+                                <div>Business</div>
+                            </label>
+
+                            <label>
+                                <input
+                                    type="radio"
+                                    name = "category"
+                                    id="category2"
+                                    value="personal" />
+                                <span class="bubble personal"></span>
+                                <div>Personals</div>
+                            </label>
+                        </div>
+                    <!-- Add To Do Button -->    
+                        <input type="submit" value="Add todo" />
+                </form>
+            </section>
+            <!-- To Do List -->
+            <section class=" todo-list">
+                <h3>TODO LIST</h3>
+                <div class="list" id="todo-list">
+
+
+              <!--  <div class="todo-item done">
+                            <label>
+                            <input type ="checkbox" />
+                            <span class="bubble business"></span>
+                        </label>
+                        <div class="todo-content">
+                            <input type="text" valu  e="Make a video" readonly />
+                        </div>
+                        <div class="actions">
+                            <button class="edit">Edit</button>
+                            <button class="delete">Delete</button>
+                        </div>
+                    </div>
+                    <div class="todo-item">
+                        <label>
+                            <input type ="checkbox" />
+                            <span class="bubble personal"></span>
+                        </label>
+
+                        <div class="todo-content">
+                            <input type="text" value="Get Milk" readonly />
+                        </div>
+                        <div class="actions">
+                            <button class="edit">Edit</button>
+                            <button class="delete">Delete</button>
+                        </div>
+                    </div>
+                    !-->
+                    </div>
+                </div>
+            </section>            
+        </main>
+        
+    
+    </body>
+    <script src="main.js"></script>
+</html>
